@@ -1,0 +1,27 @@
+
+.flexbox {
+    display: flex;
+    /*Flexibilizar a mis hijos para que ocupen el menor espacio posible*/
+}
+
+.flexbox--responsive{
+    align-items: center;
+    justify-content: center;
+}
+
+.flexbox--responsive{
+    flex-direction: column;
+}
+
+@media (min-width: 768px) {
+    .flexbox--responsive{
+        flex-direction: row;
+    }
+}
+
+.flexbox--header {
+    align-items: center;
+    /*siempre utilizar para alinear verticalmente */
+    justify-content: space-between;
+    /*Siempre utilizar para justificar de manera horizontal*/
+}

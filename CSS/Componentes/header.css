@@ -1,0 +1,10 @@
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    /*para sacar el encabezado superior fija*/
+    width: 100%;
+    background-color: var(--primary-shadow-color);
+    box-shadow: 0 0 0.5rem var(--dark-primary-shadow-color);
+    /*para generar sombras*/
+}

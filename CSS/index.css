@@ -1,4 +1,8 @@
 @import "./modules/variables/variables.css";
+@import "./Componentes/header.css";
+@import "./Componentes/nav.css";
+@import "./Layout/container.css";
+@import "./Layout/flexbox.css";
 
 .body {
     margin: 0;
@@ -10,50 +14,12 @@
     font-family: var(--primary-font-family);
 }
 
-.header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    /*para sacar el encabezado superior fija*/
-    width: 100%;
-    background-color: var(--primary-shadow-color);
-    box-shadow: 0 0 0.5rem var(--dark-primary-shadow-color);
-    /*para generar sombras*/
-}
-
-.nav {
-    --padding-nav:1rem;
-    padding-top:var (--padding-nav);
-    /*espacio hacia arriba*/
-    padding-bottom: (--padding-nav);
-    /*para crear variable es con --. En Java era let*/
-    --i-menu: 1;
-    --i-close: 0;
-}
-
-#menu:target{
-    --i-menu: 0;
-    --i-close: 1;
-}
-
-#menu:target .list--menu{
-    opacity: 1;
-    pointer-events: initial;
-}
-
 .section{
     padding-top: 2rem;
     padding-bottom: 2rem;
 }
 
 /*Si no se pone . afectaría a toda la etiqueta que tenga el mismo nombre, pero con . solo afecta a la clase*/
-.container {
-    max-width: 1024px;
-    padding-right: 1rem;
-    padding-left: 1rem;
-    /*max ancho de píxeles*/
-    margin: auto;
-}
 
 .title{
     font-size: 2rem;
@@ -136,7 +102,6 @@
     /*es cuando selecciono el menú del navegador superior se pone rojo cuando pongo encima el cursor*/
     color: var(--primary-text-color);
 }
-
 
 .hero {
     min-height: 100vh;
@@ -276,33 +241,6 @@
     .button {
         font-size: 1rem;
     }
-}
-
-.flexbox {
-    display: flex;
-    /*Flexibilizar a mis hijos para que ocupen el menor espacio posible*/
-}
-
-.flexbox--responsive{
-    align-items: center;
-    justify-content: center;
-}
-
-.flexbox--responsive{
-    flex-direction: column;
-}
-
-@media (min-width: 768px) {
-    .flexbox--responsive{
-        flex-direction: row;
-    }
-}
-
-.flexbox--header {
-    align-items: center;
-    /*siempre utilizar para alinear verticalmente */
-    justify-content: space-between;
-    /*Siempre utilizar para justificar de manera horizontal*/
 }
 
 .d-flex {
