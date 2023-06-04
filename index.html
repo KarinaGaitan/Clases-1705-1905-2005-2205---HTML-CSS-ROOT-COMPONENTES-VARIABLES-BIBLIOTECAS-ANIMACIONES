@@ -1,0 +1,156 @@
+<!DOCTYPE html> /
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Karina Gaitán Chunga</title>
+    <link rel="stylesheet" href="./CSS/index.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" />
+    <!--Cada vez que voy a subir icon de bootsrap-->
+    <!--<style>
+        .padre{
+            position:relative;
+            /*Posición fixed, no importa antepasados, solo es fijo*/
+            /*Existen diferentes posiciones static que es por defecto, relative, fixed, absolut (no respeta las reglas del padre)*/ 
+            width: 256px;
+            height: 256px;
+            background-color: white;
+        }
+        .hijo{
+            /*prioridad siempre es left y top*/
+            /*si la posición es relativa del padre si va a respetar las 4 posiciones del hijo*/
+            position: absolute;
+            left: 100px;
+            right: 100px;
+            width: 32px;
+            height: 32px;
+            background-color: red;
+        }
+    </style>-->
+</head>
+
+<body class="body">
+    <!--<div class="padre">
+        <div class="hijo">
+        </div>
+    </div>-->
+    <!--header es para hacer encabezado, etiqueta nav para contener elementos que dan navegación-->
+    <!--div para dar estructura, a href me da la navegabilidad, esta SIEMPRE debe estar con una img src + alt-->
+    <header class="header">
+        <nav class="nav" id="menu">
+            <div class="container flexbox flexbox--header">
+                <!--Container es padre y sus hijos son ahref y ul-->
+                <!--Para flexibilizar a padre con sus hijos utilizar flexbox y flexbox-header-->
+                <a href="#">
+                    <img src="https://i.postimg.cc/WpXBnMsL/Fotograf-a.jpg" alt="Logo de Karina Gaitan" width="48"
+                        height="48" class="img img--logo" />
+                </a>
+                <a href="#menu" class="icon icon--lg icon--menu md:d-none"><i class="bi bi-list"></i></a>
+                <a href="#" class="icon icon--lg icon--close md:d-none"><i class="bi bi-x-circle"></i></a>
+                <!--Si quiero menu desplegable hacia abajo siempre poner #-->
+                <!--Etiqueta a es para navegación-->
+                <ul class="list list--menu flexbox flexbox--responsive flexbox-center gap-xs">
+                    <li>
+                        <a href="#" class="link">Servicios</a>
+                    </li>
+                    <li>
+                        <a href="#" class="link">Proyectos</a>
+                    </li>
+                    <li>
+                        <a href="#" class="link">Contáctenos</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <article class="hero">
+            <!--Se usa article cuando veo una sección de la web y se entiende el contexto-->
+            <!--Se usa sección cuando esa parte no dice algo importante-->
+            <div class="container g-layout g-layout--1-1 g-layout--center gap-md">
+            <!--container limita el ancho-->
+            <!--Clase modificadora permite tener un estilo para laptop y otro para mobile-->
+                <div class="card">
+                    <div class="card__body">
+                        <h1 class="card__title">La mejor Desarrolladora web</h1>
+                        <h2 class="card__title card__title--lg">Soy Karina Gaitán Chunga
+                            <span class="color-primary">Administradora y Diseñadora Web Free Lance</span>
+                            <!--Los span son etiquetas y estilos diferentes-->
+                        </h2>
+                        <p class="card__text d-none md:d-block">Me gustaría poder desempeñarme como programadora junior
+                            utilizando mis competencias
+                            aprendidas como Administradora. Cuento con rápida capacidad de aprendizaje, adaptación al
+                            cambio y resilencia. </p>
+                        <!--etiqueta que permite estructurar el main, siempre debe de existir-->
+                        <ul class="list d-flex gap-xs">
+                            <li>
+                                <a href="https://www.facebook.com/profile.php?id=100069134096302" target="_blank"
+                                    rel="noopener noreferrer" class="icon"><i class="bi bi-facebook"></i></a>
+                                <!--Los enlaces del bootstrap siempre pegar en el nombre del link-->
+                            </li>
+                            <li>
+                                <a href="https://www.instagram.com/inmobiliaria_gaitan/" target="_blank"
+                                    rel="noopener noreferrer" class="icon"><i class="bi bi-instagram"></i></a>
+                            </li>
+                            <li>
+                                <a href="https://github.com/KarinaGaitan/Bootcamp" target="_blank"
+                                    rel="noopener noreferrer" class="icon"><i class="bi bi-github"></i></a>
+                            </li>
+                            <li>
+                                <a href="https://www.linkedin.com/in/karina-g-8328831b/" target="_blank"
+                                    rel="noopener noreferrer" class="icon"><i class="bi bi-linkedin"></i></a>
+                            </li>
+                        </ul>
+                        <a href="https://1drv.ms/f/s!AsSu-bd3F-a6gYsmbbG-Dybk88biRQ?e=a18V9d" target="_blank"
+                            rel="noopener noreferrer" class="button">Descargar CV</a>
+                    </div>
+                </div>
+                <img src="https://i.postimg.cc/WpXBnMsL/Fotograf-a.jpg" alt="Profesional de la Portada" width="200"
+                    height="200" class="img img--hero" />
+                <!--Etiqueta img siempre va con src, alt para decir el títuo de la imagen en caso de error, width y height-->
+                <!--gap es para espaciado entre palabras-->
+            </div>
+        </article>
+        <section class="section">
+            <div class="container d-flex f-direction-column gap-md">
+                <h2 class="title">Nuestros Servicios</h2>
+                <div class="g-layout g-layout--1-1-1 gap-sm">
+                    <div class="card">
+                        <div class="card__body">
+                            <span class="color-primary"><i class="bi bi-code-slash"></i></span>
+                            <h3 class="card__title"> Web Development </h3>
+                            <p class="card__text"> Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod
+                                tempor incidunt ut labore et dolore magna aliqua. </p>
+                            <a href="#" class="button">Contactar</a>
+                        </div>
+                    </div>
+                </br>
+                    <div class="card">
+                        <div class="card__body">
+                            <span class="color-primary"><i class="bi bi-code-slash"></i></span>
+                            <h3 class="card__title"> Web Development </h3>
+                            <p class="card__text"> Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod
+                                tempor incidunt ut labore et dolore magna aliqua</p>
+                            <a href="#" class="button">Contactar</a>
+                        </div>
+                    </div>
+                </br>
+                    <div class="card">
+                        <div class="card__body">
+                            <span class="color-primary"><i class="bi bi-code-slash"></i></span>
+                            <h3 class="card__title"> Web Development </h3>
+                            <p class="card__text"> Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod
+                                tempor incidunt ut labore et dolore magna aliqua. </p>
+                            <a href="#" class="button">Contactar</a>
+                        </div>
+                    </div>
+                </br>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>
