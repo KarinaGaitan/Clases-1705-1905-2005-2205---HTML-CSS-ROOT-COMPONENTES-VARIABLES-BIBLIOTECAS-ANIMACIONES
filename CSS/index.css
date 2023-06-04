@@ -1,23 +1,4 @@
-/*El último estilo es el que se aplica en caso de conflicto*/
-/*root se crea todas las variables para todos los componentes de a web en general*/
-/*dentro del root se declara variables*/
-
-:root {
-    --main-primary-color: #2ca5ce;
-    --background-primary-color: #16181d;
-    --primary-text-color: white;
-    --primary-font-family: monospace;
-    --light-primary-shadow-color:rgb(119, 165, 238);
-    --dark-primary-shadow-color:rgba(255, 255, 255, 0.5);
-    --primary-spacing:1.5rem;
-    /*es para celulares*/
-}
-
-@media (min-width: 768px) {
-    :root {
-        --primary-spacing: 2rem;
-    }
-}
+@import "./modules/variables/variables.css";
 
 .body {
     margin: 0;
@@ -344,6 +325,10 @@
 
 .gap-md {
     gap: 1rem;
+}
+
+.bg--secondary {
+    background-color: var(--secondary-background-color);
 }
 
 .color-primary {
