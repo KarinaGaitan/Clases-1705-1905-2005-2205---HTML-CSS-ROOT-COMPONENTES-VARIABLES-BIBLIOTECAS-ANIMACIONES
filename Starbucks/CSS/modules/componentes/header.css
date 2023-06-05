@@ -1,0 +1,9 @@
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    /*Abarca el 100% de la web*/
+    box-shadow: 0 0 0.5rem 0 var(--primary-shadow-color);
+    /*son 4 lados, los dos primeros siempre van en 0. Lado X Y Difuminado Crecimiento*/
+}

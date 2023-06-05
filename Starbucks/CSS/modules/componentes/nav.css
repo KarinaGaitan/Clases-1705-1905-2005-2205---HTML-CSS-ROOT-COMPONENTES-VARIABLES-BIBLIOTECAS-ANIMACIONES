@@ -1,0 +1,6 @@
+.nav{
+    padding-top: calc(var(--primary-spacing)/2);
+    padding-bottom: calc(var(--primary-spacing)/2);
+    /*espacio entre la parte superior, izquierda y derecha de la pantalla*/
+    /*1 rem = 16px*/
+}

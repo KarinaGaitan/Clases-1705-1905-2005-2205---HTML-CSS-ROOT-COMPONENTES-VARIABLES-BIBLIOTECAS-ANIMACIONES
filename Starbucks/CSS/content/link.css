@@ -1,0 +1,14 @@
+.link{
+    text-decoration: none;
+    font-weight: 700;
+    color: var(--primary-text-color);
+    padding: 0.25rem 1rem;
+    border-radius: var(--primary-border-radius);
+    transition: 0.25s background-color, 0.25s color;
+    font-size: 1rem;
+}
+
+.link:hover{
+    color: var(--white-color);
+    background-color: var(--primary-main-color);
+}

@@ -1,0 +1,11 @@
+.flexbox{
+    display: flex;
+    /*flex-direction: row; es por defecto*/
+
+}
+
+.flexbox--header{
+    align-items: center;
+    justify-content: space-between;
+    /*para ampliar el texto uniforme entre las paredes*/
+}

@@ -1,0 +1,7 @@
+.list{
+/*propiedades indispensables en lista: margin, list-style,padding*/
+/*le quito el estilo por defecto*/
+    margin: 0;
+    list-style: none;
+    padding: 0;
+}

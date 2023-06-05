@@ -1,0 +1,16 @@
+@import "./modules/componentes/header.css";
+@import "./modules/variables/variables.css";
+@import "./modules/componentes/nav.css";
+@import "./modules/layouts/container.css";
+@import "./modules/layouts/flexbox.css";
+@import "./modules/componentes/list.css";
+@import "./modules/utils/utils.css";
+@import "./content/link.css;";
+@import "./content/img.css";
+
+
+.body{
+    margin: 0;
+    background-color: var(--primary-background-color);
+    font-family: var(--primary-font-family);
+}
