@@ -5,3 +5,19 @@
 .gap-xs{
     gap:calc(var(--primary-spacing)/2);
 }
+
+.color-primary{
+    color: var(--primary-main-color);
+}
+
+.d-none{
+    display: none;
+}
+/*en modo mobile y desktop siempre va a existir esta clase*/
+
+@media (min-width: 768px){
+    .md\:d-block{
+        display: block;
+    }
+}
+

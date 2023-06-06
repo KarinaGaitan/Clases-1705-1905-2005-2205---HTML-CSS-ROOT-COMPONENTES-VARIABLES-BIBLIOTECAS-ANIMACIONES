@@ -1,0 +1,43 @@
+.hero {
+    position: relative;
+    min-height: 100vh;
+    /*es para que ocupe el color toda la pantalla*/
+    display: flex;
+    align-items: center;
+    /*la alineación por defecto es toda la pantalla strech*/
+    overflow: hidden;
+}
+
+/*.hero:hover{
+    /*pseudo clase hover que captura un estado*/
+    /*si pongo el cursor dentro de la pantalla se pintará de rojo
+    background-color: red;
+}*/
+
+.hero::before,
+.hero::after {
+    /*pseudo elemento en la web, para hacer figuras en la web con alguna forma*/
+    content: "";
+    z-index: -1;
+    /*es para enviar atrás la imagen que está superpuesta, SIEMPRE PONERLO, por defecto es auto*/
+    position: absolute;
+    /*SIEMPRE es absolute cuando es pseudo elemento*/
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    width: 50vh;
+    height: 50vh;
+    background-color: var(--primary-main-color);
+    top: 0;
+    left: 0;
+}
+
+.hero::after {
+    top: 0;
+    left: 0;
+}
+
+.hero::before {
+    top: 100%;
+    left: 100%;
+}
+

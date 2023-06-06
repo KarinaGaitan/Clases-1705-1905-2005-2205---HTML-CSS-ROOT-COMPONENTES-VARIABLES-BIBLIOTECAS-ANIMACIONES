@@ -7,6 +7,10 @@
 @import "./modules/utils/utils.css";
 @import "./content/link.css;";
 @import "./content/img.css";
+@import "./modules/componentes/hero.css";
+@import "./modules/componentes/card.css";
+@import "./modules/content/button.css";
+@import "./modules/layouts/grid\ layout.css";
 
 
 .body{
@@ -14,3 +18,4 @@
     background-color: var(--primary-background-color);
     font-family: var(--primary-font-family);
 }
+

@@ -1,0 +1,29 @@
+.button{
+    border: none;
+    font-family: var(--primary-font-family);
+    background-color: var(--primary-main-color);
+    color: var(--white-color);
+    font-size: 1rem;
+    /*tamaño del texto*/
+    font-weight: 700;
+    /*para guardarlo negrita y anchito*/
+    padding: 0.25em 1em;
+    /*es para el empuje de las letras*/
+    display: inline-flex;
+    text-decoration: none;
+    /*quitar el subrayado*/
+    border-radius: var(--primary-border-radius);
+    cursor: pointer;
+    transition: box-shadow 0.25s, filter 0.25s;
+}
+
+.button:hover{
+    box-shadow: 0 0 0.25rem 0.125rem var(--primary-main-color);
+    filter: brightness(1.125);
+}
+
+@media(min-width:768px) {
+    .button{
+        font-size: 1.125rem;
+    }
+}
