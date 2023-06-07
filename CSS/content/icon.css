@@ -29,11 +29,6 @@
     transition: transform 0.25s;
 }
 
-.icon--menu{
-    position: absolute;
-    right: 1rem;
-}
-
 .icon--lg {
     font-size: 1.75rem;
 }

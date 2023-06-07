@@ -5,11 +5,6 @@
 }
 
 .flexbox--responsive{
-    align-items: center;
-    justify-content: center;
-}
-
-.flexbox--responsive{
     flex-direction: column;
 }
 
@@ -24,4 +19,9 @@
     /*siempre utilizar para alinear verticalmente */
     justify-content: space-between;
     /*Siempre utilizar para justificar de manera horizontal*/
+}
+
+.flexbox--center{
+    align-items: center;
+    justify-content: center;
 }

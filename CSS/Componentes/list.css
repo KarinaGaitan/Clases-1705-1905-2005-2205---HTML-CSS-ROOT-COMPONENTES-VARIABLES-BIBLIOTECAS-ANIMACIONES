@@ -14,7 +14,7 @@
     right: 0;
     /*con esto obligo a que ocupe toda la pantalla*/
     bottom: 0;
-    background-color: #00000080;
+    background-color: var(var(--light-primary-shadow-color));
     transition: opacity 0.25s;
     pointer-events: none;
     /*cuando quiero que toda la interactividad con el mouse se permita*/
