@@ -3,6 +3,8 @@
 /*dentro del root se declara variables*/
 
 :root {
+    scroll-behavior: smooth;
+    /*para que suavice la transición en las pestañas de navegación*/
     --main-primary-color: #2ca5ce;
     --background-primary-color: #16181d;
     --secondary-background-color: #2b303b;

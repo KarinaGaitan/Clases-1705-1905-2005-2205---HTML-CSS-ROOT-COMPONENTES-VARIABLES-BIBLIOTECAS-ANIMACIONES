@@ -1,4 +1,4 @@
-<!DOCTYPE html> /
+<!DOCTYPE html> 
 <html lang="es">
 
 <head>
@@ -15,8 +15,7 @@
     <!--Copiar de Animate CSS, buscar con cdn-->
     <link
     rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-    />
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <!--Cada vez que voy a subir icon de bootsrap-->
     <!--<style>
         .padre{
@@ -40,19 +39,19 @@
     </style>-->
 </head>
 
-<body class="body">
+<body class="body animate__animated animate__fadeIn">
     <!--<div class="padre">
         <div class="hijo">
         </div>
     </div>-->
     <!--header es para hacer encabezado, etiqueta nav para contener elementos que dan navegación-->
     <!--div para dar estructura, a href me da la navegabilidad, esta SIEMPRE debe estar con una img src + alt-->
-    <header class="header animate__animated animate__fadeIn">
+    <header class="header">
         <nav class="nav" id="menu">
             <div class="container flexbox flexbox--header">
                 <!--Container es padre y sus hijos son ahref y ul-->
                 <!--Para flexibilizar a padre con sus hijos utilizar flexbox y flexbox-header-->
-                <a href="#">
+                <a href="#Profile">
                     <img src="https://i.postimg.cc/WpXBnMsL/Fotograf-a.jpg" alt="Logo de Karina Gaitan" width="48px"
                         height="48px" class="img img--logo" />
                 </a>
@@ -62,20 +61,20 @@
                 <!--Etiqueta a es para navegación-->
                 <ul class="list list--menu flexbox flexbox--responsive flexbox-center gap-xs">
                     <li>
-                        <a href="#" class="link">Servicios</a>
+                        <a href="#Servicios" class="link">Servicios</a>
                     </li>
                     <li>
-                        <a href="#" class="link">Proyectos</a>
+                        <a href="#Proyectos" class="link">Proyectos</a>
                     </li>
                     <li>
-                        <a href="#" class="link">Contáctenos</a>
+                        <a href="#Contáctenos" class="link">Contáctenos</a>
                     </li>
                 </ul>
             </div>
         </nav>
     </header>
     <main>
-        <article class="hero">
+        <article class="hero" id="Profile">
             <!--Se usa article cuando veo una sección de la web y se entiende el contexto-->
             <!--Se usa sección cuando esa parte no dice algo importante-->
             <div class="container g-layout g-layout--1-1 g-layout--center gap-md">
@@ -123,7 +122,7 @@
                 <!--gap es para espaciado entre palabras-->
             </div>
         </article>
-        <section class="section">
+        <section class="section" id="Servicios">
             <div class="container d-flex f-direction-column gap-md">
                 <h2 class="title">Nuestros Servicios</h2>
                 <div class="g-layout g-layout--1-1-1 gap-sm">
@@ -133,7 +132,7 @@
                             <h3 class="card__title"> Web Development </h3>
                             <p class="card__text"> Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod
                                 tempor incidunt ut labore et dolore magna aliqua. </p>
-                            <a href="#" class="button">Contactar</a>
+                            <a href="# Contáctenos" class="button">Contactar</a>
                         </div>
                     </div>
                 </br>
@@ -163,7 +162,7 @@
         </br>
         </br>
         </section>
-        <section class="section bg--secondary">
+        <section class="section bg--secondary" id="Proyectos">
         <div class="container d-flex f-direction-column gap-md">
             <h2 class="title">Últimos Proyectos</h2>
             <div class="g-layout g-layout--1-1-1 gap-sm">

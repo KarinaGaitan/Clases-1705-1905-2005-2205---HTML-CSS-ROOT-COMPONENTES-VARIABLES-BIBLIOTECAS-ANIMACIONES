@@ -5,10 +5,18 @@
 @import "./Layout/flexbox.css";
 @import "./Componentes/list.css";
 @import "./Componentes/section.css";
+@import "./Componentes/hero.css";
+@import "./Componentes/cards.css";
+@import "./Componentes/header.css";
+@import "./Componentes/nav.css";
+@import "./content/button.css";
+@import "./content/icon.css";
 @import "./content/img.css";
 @import "./content/link.css";
 @import "./content/title.css";
-@import "./Componentes/hero.css";
+@import "./modules/variables/variables.css";
+@import "./utils/utils.css";
+
 
 
 .body {
@@ -20,4 +28,3 @@
     /*Para cambiar el color de las letras*/
     font-family: var(--primary-font-family);
 }
-
