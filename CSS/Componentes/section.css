@@ -1,0 +1,6 @@
+.section{
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+/*Si no se pone . afectaría a toda la etiqueta que tenga el mismo nombre, pero con . solo afecta a la clase*/

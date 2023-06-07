@@ -1,0 +1,7 @@
+.title{
+    font-size: 2rem;
+    margin: 0;
+    /*quitar el estilo por defecto*/
+    color: var(--main-primary-color);
+    text-align: center;
+}

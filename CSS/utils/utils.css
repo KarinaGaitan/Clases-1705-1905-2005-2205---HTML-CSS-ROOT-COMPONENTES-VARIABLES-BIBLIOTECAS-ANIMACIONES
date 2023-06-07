@@ -1,0 +1,81 @@
+.d-flex {
+    display: flex;
+}
+
+.f-direction-column {
+    flex-direction: column;
+}
+
+.gap-sm {
+    gap: 1.Srem;
+}
+
+.gap-xs {
+    gap: 1.5rem;
+    /*espaciado entre el encabezado*/
+    /*espaciado entre íconos de redes sociales*/
+}
+
+.gap-md {
+    gap: 1rem;
+}
+
+.bg--secondary {
+    background-color: var(--secondary-background-color);
+}
+
+.color-primary {
+    /*text-shadow: 0 0 0 var(--main-primary-color);*/
+    /*Sólo en caso que tenga una sombra*/
+    color: var(--main-primary-color);
+
+}
+
+/*media query*/
+/*768px es para tablets*/
+
+.d-none {
+    display: none;
+}
+
+@media (min-width:768px) {
+    .md\:d-block {
+        display: block;
+    }
+
+    .md\:d-none{
+        display: none;
+    }
+}
+
+/*Si con el celular no se puede visualizar bien, aplica esto*/
+/*media query, para responsive web design*/
+/*768px es para tablets*/
+
+.g-layout {
+    display: grid;
+}
+
+.g-layout--1-1 {
+    grid-template-columns: 1fr;
+}
+
+.g-layout--1-1-1 {
+    grid-template-columns: 1fr;
+}
+
+
+.g-layout--center {
+    align-items: center;
+    justify-items: center;
+}
+
+@media (min-width: 768px) {
+    .g-layout--1-1 {
+        grid-template-columns: 1fr 1fr;
+    }
+    .g-layout--1-1-1 {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+

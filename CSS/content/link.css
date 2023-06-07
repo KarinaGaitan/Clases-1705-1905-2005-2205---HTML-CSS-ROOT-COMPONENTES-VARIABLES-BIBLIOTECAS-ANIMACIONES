@@ -1,0 +1,13 @@
+.link {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 700;
+    /*Para que el texto del encabezado se vea más grueso*/
+    transition: 0.25s color;
+}
+
+.link:hover {
+    /*es cuando selecciono el menú del navegador superior se pone rojo cuando pongo encima el cursor*/
+    color: var(--main-primary-color);
+}

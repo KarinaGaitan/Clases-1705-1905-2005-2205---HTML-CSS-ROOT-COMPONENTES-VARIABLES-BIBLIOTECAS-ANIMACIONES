@@ -1,0 +1,28 @@
+.img {
+    display: block;
+    /* Considerar etiqueta object-file: cover cuando se ajusta al tamaño máximo posible dentro del contenedor sin perder la relación de aspecto original. El contenido puede recortarse si su relación de aspecto difiere de la del contenedor.*/
+    /*considerar block cuando quiero que respete el ancho y alto de la imagen*/
+}
+
+.img--logo {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    /*es para que el logo esté redondo, 50% siempre es máximo*/
+}
+
+.img--hero {
+    width: 256px;
+    height: 256px;
+    border-radius: 50%;
+    /*es para que el logo esté redondo, 50% siempre es máximo*/
+    box-shadow: -0.25rem -0.25rem 1rem 0.25rem rgba(0, 90, 255, 0.8) 0.25rem 5px 1rem 0.25rem #388f7f;
+}
+
+
+@media (min-width: 768px) {
+    .img--hero {
+        width: 320px;
+        height: 320px;
+    }
+}

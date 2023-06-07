@@ -7,7 +7,7 @@
     --background-primary-color: #16181d;
     --secondary-background-color: #2b303b;
     --primary-text-color: white;
-    --primary-font-family: monospace;
+    --primary-font-family: 'Inconsolata', monospace;
     --light-primary-shadow-color:rgb(119, 165, 238);
     --dark-primary-shadow-color:rgba(255, 255, 255, 0.5);
     --primary-spacing:1.5rem;

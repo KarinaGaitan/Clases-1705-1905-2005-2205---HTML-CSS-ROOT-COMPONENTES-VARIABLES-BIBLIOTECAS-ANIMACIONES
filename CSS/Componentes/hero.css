@@ -1,0 +1,18 @@
+.hero {
+    min-height: 100vh;
+    /*si quiero imagen en forma de hoja: border - radius: 50% 2rem 50% 2rem;*/
+    background-image: linear-gradient(#00000080, #00000080), url(https://i.postimg.cc/xjb9gm3k/8151a41973daf5831d012e950e7caefd-download.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /*para que todo se centre*/
+    /*si quiero que la imagen rote, etiqueta transform: rotateY(180deg);*/
+    overflow: hidden;
+}
+
+.hero::before {
+    /*Para comenzar a trabajar en el posicionamiento, pseudo elemento ::*/
+    content: "";
+}

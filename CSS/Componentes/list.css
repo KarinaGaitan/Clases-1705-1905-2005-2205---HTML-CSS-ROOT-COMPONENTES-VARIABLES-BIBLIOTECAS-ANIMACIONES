@@ -1,0 +1,30 @@
+.list {
+    /*estilos por defecto son: display, list style-list, margin block end, margin inline start, margin inline end, padding inline start*/
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.list--menu {
+    position: fixed;
+    /*cuando se usa position para tener distancia usar top left right*/
+    opacity: 0;
+    top: 80px;
+    left: 0;
+    right: 0;
+    /*con esto obligo a que ocupe toda la pantalla*/
+    bottom: 0;
+    background-color: #00000080;
+    transition: opacity 0.25s;
+    pointer-events: none;
+    /*cuando quiero que toda la interactividad con el mouse se permita*/
+}
+
+@media (min-width: 768px) {
+    .list--menu{
+        opacity: 1;
+        pointer-events: initial;
+        position: initial;
+        background-color: initial;
+    }
+}

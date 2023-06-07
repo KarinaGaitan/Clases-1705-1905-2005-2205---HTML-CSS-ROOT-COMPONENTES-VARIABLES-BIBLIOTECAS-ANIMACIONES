@@ -1,0 +1,47 @@
+.card {
+    max-width: 512px;
+}
+
+.card__body {
+    background-color: #2b303b;
+    padding: 1rem;
+    border-radius: 1rem;
+    /*quiero separar a mis hijos*/
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    /*Alineación a la izquierda*/
+    gap: 0.75rem;
+}
+
+.card__title {
+    margin: 0;
+    font-size: 1.25rem;
+}
+
+.card__title--lg {
+    font-size: 1.5rem;
+}
+
+.card__text {
+    /*Los encabezados tienen margin por defecto*/
+    margin: 0;
+}
+
+@media(min-width:768px) {
+    .card__body {
+        font-size: 1rem;
+    }
+
+    .card__title {
+        font-size: 1.5rem;
+    }
+
+    .card__title--lg {
+        font-size: 1.75rem;
+    }
+
+    .card__text {
+        font-size: 1rem;
+    }
+}

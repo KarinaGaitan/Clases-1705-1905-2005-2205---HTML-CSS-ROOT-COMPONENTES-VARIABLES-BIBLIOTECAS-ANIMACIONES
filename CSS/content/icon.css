@@ -1,0 +1,45 @@
+.icon {
+    /*padding: 0.5rem;*/
+    display: flex;
+    font-size: 1.5rem;
+    color: white;
+    /*border: 1px solid white;*/
+    /*box-shadow: 0 0 0 0.125rem var(--main-primary-color);
+    /*border-radius: 50%;
+    /*borde del icono*/
+    /*overflow:hidden;*/
+    text-decoration: none;
+}
+
+.icon i {
+    display: flex;
+}
+
+.icon--menu {
+    transform: scale(var(--i-menu));
+    position: absolute;
+    right: 1rem;
+    transition: transform 0.25s;
+}
+
+.icon--close {
+    transform: scale(var(--i-close));
+    position: absolute;
+    right: 1rem;
+    transition: transform 0.25s;
+}
+
+.icon--menu{
+    position: absolute;
+    right: 1rem;
+}
+
+.icon--lg {
+    font-size: 1.75rem;
+}
+
+@media(min-width:768px) {
+    .icon {
+        font-size: 1.625rem;
+    }
+}
